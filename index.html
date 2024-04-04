@@ -14,7 +14,8 @@
 <script>
 // Function to handle button click
 function handleClick() {
-	console.log('XXXXXXXXXX button clickced');
+	console.log('XXXXXXXXXX button clickced', parent);
+	parent.postMessage('RequestSubmitted', 'What\'s this');
     try {
 		parent.postMessage('RequestSubmitted');
 	} catch (e) {
